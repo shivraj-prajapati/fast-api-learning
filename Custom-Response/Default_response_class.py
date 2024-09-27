@@ -6,7 +6,14 @@ app = FastAPI()
 
 @app.get("/")
 async def get_message():
-    return [{"message" : "Hello rocky.!"},{"message" : "How are You"}]
+    return [
+        {
+            "message" : "Hello rocky.!"
+        },
+        {
+            "message" : "How are You"
+        }
+    ]
 
 if __name__ == "__main__":
     import uvicorn 
